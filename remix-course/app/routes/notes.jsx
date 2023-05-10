@@ -5,3 +5,7 @@ export default function NotesPage() {
         </main>
     );
 }
+
+/* export function links() { 
+    return [{re:'stylesheet', href: }]
+} */

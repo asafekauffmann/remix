@@ -14,6 +14,6 @@ export default function Index() {
   );
 }
 
-/* export function links() {
+export function links() {
   return [{ rel: 'stylesheet', href: homeStyles }];
-} */
+} 
