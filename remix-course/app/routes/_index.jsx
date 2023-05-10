@@ -1,9 +1,6 @@
 import { Link } from '@remix-run/react';
-import  homeStyles from '~/styles/home.css';
 
-export const meta = () => {
-  return [{ title: "New Remix App" }];
-};
+import  homeStyles from '~/styles/home.css';
 
 export default function Index() {
   return (
@@ -17,6 +14,6 @@ export default function Index() {
   );
 }
 
-export function links() {
+/* export function links() {
   return [{ rel: 'stylesheet', href: homeStyles }];
-}
+} */
