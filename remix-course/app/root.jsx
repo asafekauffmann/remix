@@ -3,11 +3,10 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration} from "@rem
 import styles from '~/styles/main.css';
 
 export const meta = () => ({
-  charset:  'utf-8',
+  charset: 'utf-8',
   title: 'New Remix App',
   viewport: 'width=device-width,initial-scale=1',
 });
-
 
 export default function App() {
   return (
