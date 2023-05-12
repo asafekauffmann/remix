@@ -1,13 +1,13 @@
-import  homeStyles from '~/styles/home.css';
+import NewNote, { links as newNoteLinks } from '~/components/NewNote';
 
 export default function NotesPage() {
-    return (
-        <main id="content">
-            <h1>My Notes!</h1>
-        </main>
-    );
+  return (
+    <main>
+      <NewNote />        
+    </main>
+  );
 }
 
 export function links() { 
-    return [{ rel:'stylesheet', href: homeStyles }];
+  return [...newNoteLinks()];
 } 
