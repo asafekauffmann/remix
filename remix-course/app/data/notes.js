@@ -1,4 +1,4 @@
-import fs from 'fs/primises';
+import fs from 'fs/promises';
 
 export async function getStoredNotes() {
   const rawFileContent = await fs.readFile('notes.json', {encoding: 'utg-8'});
