@@ -13,6 +13,7 @@ export default function NotesPage() {
 export async function action({request}) {
   const formData = await request.formData(); // await for a call request for a data
   const noteData = Object.fromEntries(formData); 
+
   // Add Validation 
   const existingNotes = await getStoredNotes();
   noteData.id = new Date().toISOString();
@@ -22,13 +23,16 @@ export async function action({request}) {
 
 
 
+
+}
 /* 
   another example for to do noteData 
     const noteData = {
     title: formData.get('title'),
     content: formData.get('content'),
-};*/ 
-}
+  };
+*/ 
+
 
 export function links() { 
   return [...newNoteLinks()];
