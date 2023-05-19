@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 
 export async function getStoredNotes() {
-  const rawFileContent = await fs.readFile('notes.json', {encoding: 'utg-8'});
+  const rawFileContent = await fs.readFile('notes.json', {encoding: 'utf-8'});
   const data = JSON.parse(rawFileContent);
   const storedNotes = data.notes ?? [];
   return storedNotes;
