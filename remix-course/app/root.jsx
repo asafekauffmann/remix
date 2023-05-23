@@ -15,10 +15,12 @@ export default function App() {
         <Meta/>
         <Links />
       </head>
+      
       <body>
         <header>
           <MainNavigation />
         </header>
+
         <Outlet />
         <ScrollRestoration />
         <Scripts />
